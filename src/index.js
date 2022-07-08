@@ -6,11 +6,10 @@ const morgan = require("morgan");
 const cors = require("cors");
 const swaggerUI = require("swagger-ui-express");
 const docs = require('./docs');
-const todoRouter = require('./routes/todos');
 
 const adapter = new FileSync(join(__dirname,'..','db.json'));
 const db = low(adapter);
-db.defaults({ todos:[] }).write();    
+db.defaults({ todos:[], users:[] }).write();    
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -20,7 +19,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(morgan("dev"));
 app.use(cors());
-app.use('/todos',todoRouter);
+app.use('/api/todos', require('./routes/todos'));
+app.use('/api/users', require('./routes/users'))
+
 app.use('/api-docs',swaggerUI.serve,swaggerUI.setup(docs));
 
 //initialize the app.

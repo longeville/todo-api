@@ -12,5 +12,34 @@
       "category": "cat-02",
       "isDone": false
     }
+  ],
+  "users": [
+    {
+      "email": "jane@email.com",
+      "id": "04df2f9a-13a9-4263-97a3-4e382a70311e",
+      "name": "Lola Doe",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 5
+      }
+    },
+    {
+      "id": "nYZSDly-sFd5CMm2la63fMqOzXx12FD8HYKX",
+      "name": "Jane Doe",
+      "email": "jane@email.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 5
+      }
+    },
+    {
+      "id": "b64df16e-cfbf-4967-9cd1-3e2bc51b5357",
+      "name": "Monki",
+      "email": "monki@email.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 5
+      }
+    }
   ]
 }
