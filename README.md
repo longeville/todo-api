@@ -1,3 +1,5 @@
+<!-- created following https://www.section.io/engineering-education/documenting-node-js-rest-api-using-swagger/ -->
+
 ### Simple Node.js REST API.
 
 - Ensure you have [Node.js](https://nodejs.org/en/) installed on your computer.

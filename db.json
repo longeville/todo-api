@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": "0cSugFIX",
+      "title": "Coding in JavaScript",
+      "completed": false
+    },
+    {
+      "id": "w8RfBVPL",
+      "title": "Creating a server",
+      "completed": true
+    }
+  ]
+}
