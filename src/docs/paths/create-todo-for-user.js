@@ -1,14 +1,14 @@
 module.exports = {
     post: {
         tags: ["todos"],
-        description: "Create todo",
-        operationId: "createTodo",
+        description: "Create a new to do for a user",
+        operationId: "createTodoForUser",
         parameters: [],
         requestBody: {
             content: {
                 "application/json": {
                     schema: {
-                        $ref: "#/components/schemas/TodoInput",
+                        $ref: "#/components/schemas/TodoForUserInput",
                     },
                 },
             },

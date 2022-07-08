@@ -73,6 +73,37 @@ module.exports = {
                 },
             },
 
+            TodoForUserInput: {
+                type: "object",
+                properties: {
+                    id: {
+                        type: "string",
+                        description: "User identification number",
+                        example: "04df2f9a-13a9-4263-97a3-4e382a70311e",
+                    },
+                    todo: {
+                        type: "object",
+                        properties: {
+                            name: {
+                                type: "string",
+                                description: "Todo's name",
+                                example: "Nieuwe to do",
+                            },
+                            isDone: {
+                                type: "boolean",
+                                description: "The status of the todo",
+                                example: false,
+                            },
+                            category: {
+                                type: "string",
+                                description: "Todo's category",
+                                example: "cat-01",
+                            },
+                        },
+                    },
+                },
+            },
+
             // User model
             // {
             //     email: "jane@email.com",

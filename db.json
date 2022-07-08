@@ -17,6 +17,12 @@
       "name": "Pick up socks",
       "category": "cat-03",
       "isDone": false
+    },
+    {
+      "name": "Pick up Elif",
+      "isDone": false,
+      "category": "cat-01",
+      "id": "d0e153f1-aba4-4a70-a558-cee35681db6e"
     }
   ],
   "users": [
@@ -24,6 +30,14 @@
       "email": "mi@email.com",
       "id": "04df2f9a-13a9-4263-97a3-4e382a70311e",
       "name": "Mimi",
+      "todos": [
+        {
+          "name": "Nieuwe to do",
+          "isDone": false,
+          "category": "cat-01",
+          "id": "4ae0293c-46a6-47b2-942b-413f69dc809b"
+        }
+      ],
       "statistics": {
         "registrationDate": "05.07.2022",
         "totalOnlineTime": 5
@@ -118,6 +132,51 @@
         "totalOnlineTime": 0
       },
       "id": "34fdd99a-8d8a-41e0-ab26-136c460de570"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "janneke@doe.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 0
+      },
+      "id": "11f28f3c-e8f8-424b-a4e9-c6e8b0822a03"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "janneke@doe.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 0
+      },
+      "id": "58f25171-e691-463c-8ade-44e697ead7d1"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "janneke@doe.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 0
+      },
+      "id": "6f411ed5-fc71-457e-9b97-341e9f79714f"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "janneke@doe.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 0
+      },
+      "id": "5355437c-9491-4fee-a9d0-fa22ea8da589"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "janneke@doe.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 0
+      },
+      "id": "89bc0599-755c-4889-8e99-a4b6889f2cff"
     }
   ]
 }

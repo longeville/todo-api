@@ -1,6 +1,7 @@
 const getTodos = require('./get-todos');
 const getTodo = require('./get-todo');
 const createTodo = require('./create-todo');
+const createTodoForUser = require('./create-todo-for-user');
 const updateTodo = require('./update-todo');
 const deleteTodo = require('./delete-todo');
 
@@ -21,6 +22,9 @@ module.exports = {
             ...getTodo,
             ...updateTodo,
             ...deleteTodo
+        },
+        '/api/todos/todo-for-user':{
+            ...createTodoForUser
         },
         '/api/users':{
             ...getUsers,

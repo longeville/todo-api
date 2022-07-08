@@ -49,6 +49,59 @@ router.post("/", (req, res) => {
     }
 });
 
+router.post("/todo-for-user", (req, res) => {
+    const isIdValid = checkIfValidId(req.body.id);
+    const isToDoValid = checkIfValidTodo(req.body.todo);
+
+    let todo = {
+        ...req.body.todo,
+        id: uuidv4(),
+    };
+
+    if (!isIdValid) {
+        res.sendStatus(400);
+        return res.send({
+            message: "invalid id",
+            internal_code: "bad input - invalid id",
+        });
+    } else if (!isToDoValid) {
+        res.sendStatus(400);
+        return res.send({
+            message: "invalid to do",
+            internal_code: "bad input - invalid to do",
+        });
+    } else {
+        // find user
+        let user = req.app.db
+            .get("users")
+            .find({
+                id: req.body.id,
+            })
+            .value();
+
+        if (!user) {
+            return res.sendStatus(404);
+        } else {
+            // write todo
+            try {
+                const updatedUser = { ...user, todos: [...user.todos, todo] };
+
+                req.app.db
+                    .get("users")
+                    .find({
+                        id: req.body.id,
+                    })
+                    .assign(updatedUser)
+                    .write();
+                return res.send("success");
+            } catch (error) {
+                res.sendStatus(500);
+                return res.send(error);
+            }
+        }
+    }
+});
+
 router.put("/:id", (req, res) => {
     const idIsValid = checkIfValidId(req.params.id);
     const todoIsValid = checkIfValidTodo(req.body);
