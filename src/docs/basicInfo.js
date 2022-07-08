@@ -1,8 +1,8 @@
 module.exports = {
-    openapi: "3.0.3", // present supported openapi version
+    openapi: "3.0.3",
     info: {
-        title: "Simple Todos API", // short title.
-        description: "A simple todos API", //  desc.
-        version: "1.0.0", // version number
+        title: "todoobiedoompie API - Swagger",
+        description: "A basic API created for a hello world project",
+        version: "1.0.0",
     },
 };

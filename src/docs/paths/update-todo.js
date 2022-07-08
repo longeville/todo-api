@@ -1,34 +1,37 @@
 module.exports = {
-    // operation's method
     put: {
-        tags: ["todos"], // operation's tag
-        description: "Update todo", // short desc
-        operationId: "updateTodo", // unique operation id
+        tags: ["todos"],
+        description: "Update todo",
+        operationId: "updateTodo",
         parameters: [
-            // expected params
             {
-                name: "id", // name of param
-                in: "path", // location of param
+                name: "id",
+                in: "path",
                 schema: {
-                    $ref: "#/components/schemas/id", // id model
+                    $ref: "#/components/schemas/id",
                 },
-                required: true, // mandatory
-                description: "Id of todo to be updated", // short desc.
+                required: true,
+                description: "Id of todo to be updated",
             },
         ],
-        // expected responses
+        requestBody: {
+            content: {
+                "application/json": {
+                    schema: {
+                        $ref: "#/components/schemas/TodoInput",
+                    },
+                },
+            },
+        },
         responses: {
-            // response code
             200: {
-                description: "Todo updated successfully", // response desc.
+                description: "Todo updated successfully",
             },
-            // response code
             404: {
-                description: "Todo not found", // response desc.
+                description: "Todo not found",
             },
-            // response code
             500: {
-                description: "Server error", // response desc.
+                description: "Server error",
             },
         },
     },

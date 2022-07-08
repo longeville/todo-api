@@ -1,43 +1,46 @@
 module.exports = {
-    // operation's method
     get: {
-        tags: ["todos"], // operation's tag.
-        description: "Get a todo", // operation's desc.
-        operationId: "getTodo", // unique operation id
+        tags: ["todos"],
+        description: "Get a todo",
+        operationId: "getTodo",
         parameters: [
-            // expected params.
             {
-                name: "id", // name of the param
-                in: "path", // location of the param
+                name: "id",
+                in: "path",
                 schema: {
-                    $ref: "#/components/schemas/id", // data model of the param
+                    $ref: "#/components/schemas/id",
                 },
-                required: true, // Mandatory param
-                description: "A single todo id", // param desc.
+                required: true,
+                description: "A single todo id",
             },
         ],
-        // expected responses
         responses: {
-            // response code
             200: {
-                description: "Todo is obtained", // response desc.
+                description: "succes",
                 content: {
-                    // content-type
                     "application/json": {
                         schema: {
-                            $ref: "#/components/schemas/Todo", // todo data model
+                            $ref: "#/components/schemas/Todo",
                         },
                     },
                 },
             },
-            // response code
-            404: {
-                description: "Todo is not found", // response desc.
+            400: {
+                description: "bad input: id not valid",
                 content: {
-                    // content-type
                     "application/json": {
                         schema: {
-                            $ref: "#/components/schemas/Error", // error data model
+                            $ref: "#/components/schemas/Error",
+                        },
+                    },
+                },
+            },
+            404: {
+                description: "not found",
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: "#/components/schemas/Error",
                         },
                     },
                 },

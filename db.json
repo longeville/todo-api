@@ -8,16 +8,22 @@
     },
     {
       "id": "6f78fc9d-4ba1-4b5f-816f-3387ae3527a5",
-      "name": "Get food for Monki",
-      "category": "cat-02",
+      "name": "Feed Monki",
+      "category": "cat-01",
+      "isDone": false
+    },
+    {
+      "id": "38405138-2d2c-475a-8820-18cea6b7fd7e",
+      "name": "Pick up socks",
+      "category": "cat-03",
       "isDone": false
     }
   ],
   "users": [
     {
-      "email": "jane@email.com",
+      "email": "mi@email.com",
       "id": "04df2f9a-13a9-4263-97a3-4e382a70311e",
-      "name": "Lola Doe",
+      "name": "Mimi",
       "statistics": {
         "registrationDate": "05.07.2022",
         "totalOnlineTime": 5

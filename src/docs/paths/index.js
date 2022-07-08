@@ -12,11 +12,11 @@ const deleteUser = require('./delete-user');
 
 module.exports = {
     paths:{
-        '/api/todo':{
+        '/api/todos':{
             ...getTodos,
             ...createTodo
         },
-        '/api/todo/{id}':{
+        '/api/todos/{id}':{
             ...getTodo,
             ...updateTodo,
             ...deleteTodo

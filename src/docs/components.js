@@ -1,64 +1,62 @@
 module.exports = {
     components: {
         schemas: {
-            // id model
             // "3cce86c0-f2ac-4514-beef-2cd6fd3fa631"
             id: {
-                type: "string", // data type
-                description: "An id of a todo", // desc
-                example: "3cce86c0-f2ac-4514-beef-2cd6fd3fa631", // example of an id
+                type: "string",
+                description: "An id of a todo",
+                example: "3cce86c0-f2ac-4514-beef-2cd6fd3fa631",
             },
 
-            // todo model
             // {
             //     name: "Pick up Elif",
             //     category: "cat-01",
             //     isDone: true,
             // },
             Todo: {
-                type: "object", // data type
+                type: "object",
                 properties: {
                     id: {
-                        type: "string", // data-type
-                        description: "Todo identification number", // desc
-                        example: "3cce86c0-f2ac-4514-beef-2cd6fd3fa631", // example of an id
+                        type: "string",
+                        description: "Todo identification number",
+                        example: "3cce86c0-f2ac-4514-beef-2cd6fd3fa631",
                     },
                     name: {
-                        type: "string", // data-type
-                        description: "Todo's name", // desc
-                        example: "Pick up Elif", // example of a name
+                        type: "string",
+                        description: "Todo's description",
+                        example: "Pick up Elif",
                     },
                     isDone: {
-                        type: "boolean", // data type
-                        description: "The status of the todo", // desc
-                        example: false, // example of a completed value
+                        type: "boolean",
+                        description: "The status of the todo",
+                        example: false,
                     },
                     category: {
-                        type: "string", // data-type
-                        description: "Todo's category", // desc
-                        example: "cat-01", // example of a category
+                        type: "string",
+                        description: "Todo's category",
+                        example: "cat-01",
                     },
                 },
             },
 
             // Todo input model
             TodoInput: {
-                type: "object", // data type
+                type: "object",
                 properties: {
                     name: {
-                        type: "string", // data type
-                        description: "Todo's name", // desc
-                        example: "Pick up Elif", // example of a name
+                        type: "string",
+                        description: "Todo's name",
+                        example: "Pick up Elif",
                     },
                     isDone: {
-                        type: "boolean", // data type
-                        description: "The status of the todo", // desc
-                        example: false, // example of a completed value
+                        type: "boolean",
+                        description: "The status of the todo",
+                        example: false,
                     },
                     category: {
-                        type: "string", // data-type
-                        description: "Todo's category", // desc
-                        example: "cat-01", // example of a category
+                        type: "string",
+                        description: "Todo's category",
+                        example: "cat-01",
                     },
                 },
             },
@@ -71,28 +69,29 @@ module.exports = {
             //     statistics: {
             //         registrationDate: "05.07.2022",
             //         totalOnlineTime: 0,
-            //     }
+            //    } 
+            // }
             User: {
-                type: "object", // data type
+                type: "object",
                 properties: {
                     id: {
-                        type: "string", // data-type
-                        description: "User identification number", // desc
-                        example: "04df2f9a-13a9-4263-97a3-4e382a70311e", // example of an id
+                        type: "string",
+                        description: "User identification number",
+                        example: "04df2f9a-13a9-4263-97a3-4e382a70311e",
                     },
                     name: {
-                        type: "string", // data-type
-                        description: "User's name", // desc
-                        example: "Jane Doe", // example of a name
+                        type: "string",
+                        description: "User's name",
+                        example: "Jane Doe",
                     },
                     email: {
-                        type: "string", // data type
-                        description: "The e-mail address of the user", // desc
-                        example: "jane@email.com", // example of a completed value
+                        type: "string",
+                        description: "The e-mail address of the user",
+                        example: "jane@email.com",
                     },
                     statistics: {
-                        type: "object", // data-type
-                        description: "statistics of the user", // desc
+                        type: "object",
+                        description: "statistics of the user",
                         properties: {
                             registrationDate: {
                                 type: "string",
@@ -113,21 +112,21 @@ module.exports = {
 
             // User input model
             UserInput: {
-                type: "object", // data type
+                type: "object",
                 properties: {
                     name: {
-                        type: "string", // data-type
-                        description: "User's name", // desc
-                        example: "Jane Doe", // example of a name
+                        type: "string",
+                        description: "User's name",
+                        example: "Jane Doe",
                     },
                     email: {
-                        type: "string", // data type
-                        description: "The e-mail address of the user", // desc
-                        example: "jane@email.com", // example of a completed value
+                        type: "string",
+                        description: "The e-mail address of the user",
+                        example: "jane@email.com",
                     },
                     statistics: {
-                        type: "object", // data-type
-                        description: "statistics of the user", // desc
+                        type: "object",
+                        description: "statistics of the user",
                         properties: {
                             registrationDate: {
                                 type: "string",
@@ -151,14 +150,14 @@ module.exports = {
                 type: "object", //data type
                 properties: {
                     message: {
-                        type: "string", // data type
-                        description: "Error message", // desc
-                        example: "Not found", // example of an error message
+                        type: "string",
+                        description: "Error message",
+                        example: "Not found",
                     },
                     internal_code: {
-                        type: "string", // data type
-                        description: "Error internal code", // desc
-                        example: "Invalid parameters", // example of an error internal code
+                        type: "string",
+                        description: "Error internal code",
+                        example: "Invalid parameters",
                     },
                 },
             },
