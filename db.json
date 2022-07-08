@@ -46,6 +46,15 @@
         "registrationDate": "05.07.2022",
         "totalOnlineTime": 5
       }
+    },
+    {
+      "id": "a2c68509-1804-438c-868c-a187db9d35da",
+      "name": "lala Loe",
+      "email": "lalalalalala@email.com",
+      "statistics": {
+        "registrationDate": "06.07.2022",
+        "totalOnlineTime": 5
+      }
     }
   ]
 }
