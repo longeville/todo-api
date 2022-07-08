@@ -1,10 +1,13 @@
 const express = require("express");
 const {nanoid} = require('nanoid');
 const router = express.Router();
+const { v4: uuidv4 } = require('uuid');
 
-const idLength = 8;
+const idLength = 36;
 
 router.get('/', (req,res) => {
+    const uuid = uuidv4();
+    console.log(uuid);
 
     let todos = req.app.db.get('todos').value();
 

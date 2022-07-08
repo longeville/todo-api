@@ -5,26 +5,36 @@ module.exports = {
             id: {
                 type: "string", // data type
                 description: "An id of a todo", // desc
-                example: "tyVgf", // example of an id
+                example: "3cce86c0-f2ac-4514-beef-2cd6fd3fa631", // example of an id
             },
             // todo model
+            // {
+            //     name: "Pick up Elif",
+            //     category: "cat-01",
+            //     isDone: true,
+            // },
             Todo: {
                 type: "object", // data type
                 properties: {
                     id: {
                         type: "string", // data-type
                         description: "Todo identification number", // desc
-                        example: "ytyVgh", // example of an id
+                        example: "3cce86c0-f2ac-4514-beef-2cd6fd3fa631", // example of an id
                     },
-                    title: {
+                    name: {
                         type: "string", // data-type
-                        description: "Todo's title", // desc
-                        example: "Coding in JavaScript", // example of a title
+                        description: "Todo's name", // desc
+                        example: "Pick up Elif", // example of a name
                     },
-                    completed: {
+                    isDone: {
                         type: "boolean", // data type
                         description: "The status of the todo", // desc
                         example: false, // example of a completed value
+                    },
+                    category: {
+                        type: "string", // data-type
+                        description: "Todo's category", // desc
+                        example: "cat-01", // example of a category
                     },
                 },
             },
@@ -32,15 +42,20 @@ module.exports = {
             TodoInput: {
                 type: "object", // data type
                 properties: {
-                    title: {
+                    name: {
                         type: "string", // data type
-                        description: "Todo's title", // desc
-                        example: "Coding in JavaScript", // example of a title
+                        description: "Todo's name", // desc
+                        example: "Pick up Elif", // example of a name
                     },
-                    completed: {
+                    isDone: {
                         type: "boolean", // data type
                         description: "The status of the todo", // desc
                         example: false, // example of a completed value
+                    },
+                    category: {
+                        type: "string", // data-type
+                        description: "Todo's category", // desc
+                        example: "cat-01", // example of a category
                     },
                 },
             },

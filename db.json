@@ -1,14 +1,16 @@
 {
   "todos": [
     {
-      "id": "0cSugFIX",
-      "title": "Coding in JavaScript",
-      "completed": false
+      "id": "3cce86c0-f2ac-4514-beef-2cd6fd3fa631",
+      "name": "Pick up Elif",
+      "category": "cat-01",
+      "isDone": true
     },
     {
-      "id": "w8RfBVPL",
-      "title": "Creating a server",
-      "completed": true
+      "id": "6f78fc9d-4ba1-4b5f-816f-3387ae3527a5",
+      "name": "Get food for Monki",
+      "category": "cat-02",
+      "isDone": false
     }
   ]
 }
