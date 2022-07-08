@@ -1,4 +1,6 @@
 <!-- created following https://www.section.io/engineering-education/documenting-node-js-rest-api-using-swagger/ -->
+### Cloned from [this repo](https://github.com/mwangiKibui/node.js-simple-api)
+Based on this [post](https://www.section.io/engineering-education/documenting-node-js-rest-api-using-swagger/)
 
 ### Simple Node.js REST API.
 
