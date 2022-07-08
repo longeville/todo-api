@@ -8,6 +8,18 @@ module.exports = {
                 example: "3cce86c0-f2ac-4514-beef-2cd6fd3fa631",
             },
 
+            // {email: "jane@doe.com"}
+            emailInput: {
+                type: "object",
+                properties: {
+                    email: {
+                        type: "string",
+                        description: "An e-mail address",
+                        example: "mi@email.com",
+                    },
+                },
+            },
+
             // {
             //     name: "Pick up Elif",
             //     category: "cat-01",
@@ -69,7 +81,7 @@ module.exports = {
             //     statistics: {
             //         registrationDate: "05.07.2022",
             //         totalOnlineTime: 0,
-            //    } 
+            //    }
             // }
             User: {
                 type: "object",

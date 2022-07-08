@@ -35,6 +35,33 @@ router.get("/:id", (req, res) => {
     return res.send(user);
 });
 
+router.post("/getByEmail", (req, res) => {
+    const email = req.body.email;
+    const emailIsValid = !!email && email.length > 0;
+
+    if (!emailIsValid) {
+        res.sendStatus(400);
+        return res.send({
+            message: "bad input - invalid email",
+            internal_code: "bad input - invalid email",
+        });
+    } else {
+        let user = req.app.db
+            .get("users")
+            .find({email: email})
+            .value();
+
+        if (!user) {
+            res.sendStatus(404);
+            return res.send({
+                message: "not found",
+                internal_code: "Invalid id",
+            });
+        }
+        return res.send(user);
+    }
+});
+
 router.post("/", (req, res) => {
     const isUserValid = checkIfValidUser(req.body);
 
@@ -46,8 +73,8 @@ router.post("/", (req, res) => {
         });
     } else {
         let user = {
-            id: uuidv4(),
             ...req.body,
+            id: uuidv4(),
         };
 
         try {

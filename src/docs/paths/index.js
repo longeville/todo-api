@@ -6,6 +6,7 @@ const deleteTodo = require('./delete-todo');
 
 const getUsers = require('./get-users');
 const getUser = require('./get-user');
+const getUserByEmail = require('./get-user-by-email');
 const createUser = require('./create-user');
 const updateUser = require('./update-user');
 const deleteUser = require('./delete-user');
@@ -29,6 +30,9 @@ module.exports = {
             ...getUser,
             ...updateUser,
             ...deleteUser
+        },
+        '/api/users/getByEmail':{
+            ...getUserByEmail,
         }
     }
 }
