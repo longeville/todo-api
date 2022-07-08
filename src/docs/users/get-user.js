@@ -1,7 +1,7 @@
 module.exports = {
     // operation's method
     get: {
-        tags: ["Users CRUD operations"], // operation's tag.
+        tags: ["users"], // operation's tag.
         description: "Get a user", // operation's desc.
         operationId: "getUser", // unique operation id
         parameters: [

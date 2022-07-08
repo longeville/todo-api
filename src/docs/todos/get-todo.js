@@ -1,7 +1,7 @@
 module.exports = {
     // operation's method
     get: {
-        tags: ["Todo CRUD operations"], // operation's tag.
+        tags: ["todos"], // operation's tag.
         description: "Get a todo", // operation's desc.
         operationId: "getTodo", // unique operation id
         parameters: [

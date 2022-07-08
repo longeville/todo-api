@@ -1,7 +1,7 @@
 module.exports = {
     // operation's method
     put: {
-        tags: ["Users CRUD operations"], // operation's tag
+        tags: ["users"], // operation's tag
         description: "Update user", // short desc
         operationId: "updateUser", // unique operation id
         parameters: [

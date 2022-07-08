@@ -6,11 +6,11 @@ const deleteTodo = require('./delete-todo');
 
 module.exports = {
     paths:{
-        '/todo':{
+        '/api/todo':{
             ...getTodos,
             ...createTodo
         },
-        '/todo/{id}':{
+        '/api/todo/{id}':{
             ...getTodo,
             ...updateTodo,
             ...deleteTodo

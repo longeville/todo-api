@@ -1,7 +1,7 @@
 module.exports = {
     // operation's method.
     delete: {
-        tags: ["Users CRUD operations"], // operation's tag
+        tags: ["users"], // operation's tag
         description: "Deleting a user", // short desc
         operationId: "deleteUser", // unique operation id
         parameters: [

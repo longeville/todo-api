@@ -1,7 +1,7 @@
 module.exports = {
     // operation's method.
     delete: {
-        tags: ["Todo CRUD operations"], // operation's tag
+        tags: ["todos"], // operation's tag
         description: "Deleting a todo", // short desc
         operationId: "deleteTodo", // unique operation id
         parameters: [

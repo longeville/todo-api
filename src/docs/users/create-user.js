@@ -1,7 +1,7 @@
 module.exports = {
     // operation's method
     post: {
-        tags: ["Users CRUD operations"], // operation's tag
+        tags: ["users"], // operation's tag
         description: "Create user", // short desc
         operationId: "createUser", // unique operation id
         parameters: [], // expected params

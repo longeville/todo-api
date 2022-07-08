@@ -1,5 +1,4 @@
 const express = require("express");
-const {nanoid} = require('nanoid');
 const router = express.Router();
 const { v4: uuidv4 } = require('uuid');
 
@@ -55,25 +54,20 @@ router.put('/:id', (req,res) => {
         .write();
 
         return res.send("user updated");
-
     } catch(error) {
         res.sendStatus(500);
         return res.send(error);
     };
-
 });
 
 router.delete('/:id', (req,res) => {
-
     //find user.
     let user = req.app.db.get("users").find({
         id:req.params.id
     }).value();
 
     if(!user){
-
         return res.sendStatus(404);
-
     };
 
     // delete the user.
@@ -84,13 +78,9 @@ router.delete('/:id', (req,res) => {
         .write();
 
         return res.send("user deleted");
-
     } catch(error) {
-
         return res.sendStatus(500);
-
     }
-
 });
 
 module.exports = router;

@@ -6,14 +6,14 @@ const deleteUser = require('./delete-user');
 
 module.exports = {
     paths:{
-        '/users':{
+        '/api/users':{
             ...getUsers,
             ...createUser
         },
-        '/users/{id}':{
+        '/api/users/{id}':{
             ...getUser,
             ...updateUser,
             ...deleteUser
-        }
+        },
     }
 }
