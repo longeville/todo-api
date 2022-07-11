@@ -112,7 +112,8 @@ module.exports = {
             //     statistics: {
             //         registrationDate: "05.07.2022",
             //         totalOnlineTime: 0,
-            //    }
+            //    },
+            //     todos: []
             // }
             User: {
                 type: "object",
@@ -150,6 +151,32 @@ module.exports = {
                             },
                         },
                     },
+                    todos: {
+                        type: 'array',
+                        description: "todos linked to this user",
+                        items: {
+                            name: {
+                                type: "string",
+                                description: "Todo's name",
+                                example: "Pick up Elif",
+                            },
+                            isDone: {
+                                type: "boolean",
+                                description: "The status of the todo",
+                                example: false,
+                            },
+                            category: {
+                                type: "string",
+                                description: "Todo's category",
+                                example: "cat-01",
+                            },
+                            id: {
+                                type: "number",
+                                description: "id of the to do",
+                                example: "07c8e0c9-529f-45d2-94c8-583a0973f94b"
+                            }
+                        }
+                    }
                 },
             },
 
@@ -185,6 +212,32 @@ module.exports = {
                             },
                         },
                     },
+                    todos: {
+                        type: 'array',
+                        description: "todos linked to this user",
+                        items: {
+                            name: {
+                                type: "string",
+                                description: "Todo's name",
+                                example: "Pick up Elif",
+                            },
+                            isDone: {
+                                type: "boolean",
+                                description: "The status of the todo",
+                                example: false,
+                            },
+                            category: {
+                                type: "string",
+                                description: "Todo's category",
+                                example: "cat-01",
+                            },
+                            id: {
+                                type: "number",
+                                description: "id of the to do",
+                                example: "07c8e0c9-529f-45d2-94c8-583a0973f94b"
+                            }
+                        }
+                    }
                 },
             },
 

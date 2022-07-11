@@ -1,43 +1,40 @@
 module.exports = {
-    // operation's method
     put: {
-        tags: ["users"], // operation's tag
-        description: "Update user", // short desc
-        operationId: "updateUser", // unique operation id
+        tags: ["users"],
+        description: "Update user",
+        operationId: "updateUser",
         parameters: [
-            // expected params
             {
-                name: "id", // name of param
-                in: "path", // location of param
+                name: "id",
+                in: "path",
                 schema: {
-                    $ref: "#/components/schemas/id", // id model
+                    $ref: "#/components/schemas/id",
                 },
-                required: true, // mandatory
-                description: "Id of user to be updated", // short desc.
-            }
+                required: true,
+                description: "Id of user to be updated",
+            },
         ],
         requestBody: {
             content: {
-                'application/json': {
+                "application/json": {
                     schema: {
-                        $ref: '#/components/schemas/UserInput'
-                    }
-                }
-            }
+                        $ref: "#/components/schemas/UserInput",
+                    },
+                },
+            },
         },
-        // expected responses
+
         responses: {
-            // response code
             200: {
-                description: "User updated successfully", // response desc.
+                description: "User updated successfully",
             },
-            // response code
+
             404: {
-                description: "User not found", // response desc.
+                description: "User not found",
             },
-            // response code
+
             500: {
-                description: "Server error", // response desc.
+                description: "Server error",
             },
         },
     },

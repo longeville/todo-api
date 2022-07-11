@@ -32,9 +32,27 @@
       "name": "Mimi",
       "todos": [
         {
-          "name": "Nieuwe to do",
+          "name": "lalalalalalalallaa",
+          "category": "cat-2",
           "isDone": false,
+          "id": "07c8e0c9-529f-45d2-94c8-583a0973f94b"
+        },
+        {
+          "name": "Nieuwe to do 2",
           "category": "cat-01",
+          "isDone": false,
+          "id": "49f8e7a8-d3d6-4989-ab14-a136654a4870"
+        },
+        {
+          "name": "Nieuwe to do 3",
+          "category": "cat-01",
+          "isDone": false,
+          "id": "0d328b1a-3094-49e5-8205-990f3037f283"
+        },
+        {
+          "name": "todo 4",
+          "category": "cat-3",
+          "isDone": false,
           "id": "4ae0293c-46a6-47b2-942b-413f69dc809b"
         }
       ],
@@ -177,6 +195,15 @@
         "totalOnlineTime": 0
       },
       "id": "89bc0599-755c-4889-8e99-a4b6889f2cff"
+    },
+    {
+      "name": "Jane Doe",
+      "email": "janneke@doe.com",
+      "statistics": {
+        "registrationDate": "05.07.2022",
+        "totalOnlineTime": 0
+      },
+      "id": "a4306eb9-e2c8-4a6a-9a5f-884014d1b127"
     }
   ]
 }

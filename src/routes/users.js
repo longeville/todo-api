@@ -124,6 +124,7 @@ router.put("/:id", (req, res) => {
                     email: req.body.email,
                     name: req.body.name,
                     statistics: req.body.statistics,
+                    todos: req.body.todos
                 })
                 .write();
 
