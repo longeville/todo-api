@@ -11,7 +11,7 @@ module.exports = {
                 // content-type
                 "application/json": {
                     schema: {
-                        $ref: "#/components/schemas/UserInput", // user input data model
+                        $ref: "#/components/schemas/NewUserInput", // user input data model
                     },
                 },
             },
@@ -20,7 +20,14 @@ module.exports = {
         responses: {
             // response code
             201: {
-                description: "User created successfully", // response desc
+                description: "User created successfully",
+                content: {
+                    "application/json": {
+                        schema: {
+                            $ref: "#/components/schemas/User",
+                        },
+                    },
+                },
             },
             // response code
             500: {

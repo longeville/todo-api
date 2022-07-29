@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { v4: uuidv4 } = require("uuid");
-const { checkIfValidId, checkIfValidUser } = require("../validation");
+const { checkIfValidId, checkIfValidUser, checkIfValidUserUpdate } = require("../validation");
 
 router.get("/", (req, res) => {
     let users = req.app.db.get("users").value();
@@ -79,7 +79,7 @@ router.post("/", (req, res) => {
 
         try {
             req.app.db.get("users").push(user).write();
-            return res.sendStatus(201).send("user created");
+            return res.send(user);
         } catch (error) {
             return res.sendStatus(500).send(error);
         }
@@ -87,7 +87,7 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-    const isUserValid = checkIfValidUser(req.body);
+    const isUserValid = checkIfValidUserUpdate(req.body);
     const isIdValid = checkIfValidId(req.params.id);
 
     if (!isIdValid) {

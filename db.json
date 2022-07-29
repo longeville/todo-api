@@ -23,6 +23,12 @@
       "isDone": false,
       "category": "cat-01",
       "id": "d0e153f1-aba4-4a70-a558-cee35681db6e"
+    },
+    {
+      "id": "0777474b-0c49-47ab-9442-752829f9da23",
+      "name": "Pick up Elif",
+      "isDone": false,
+      "category": "cat-01"
     }
   ],
   "users": [
@@ -204,6 +210,12 @@
         "totalOnlineTime": 0
       },
       "id": "a4306eb9-e2c8-4a6a-9a5f-884014d1b127"
+    },
+    {
+      "firstName": "Claire",
+      "lastName": "Loso",
+      "email": "claire@email.com",
+      "id": "63ea81c7-e3f6-4ef7-906c-d1ad58991c11"
     }
   ]
 }

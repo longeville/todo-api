@@ -152,7 +152,7 @@ module.exports = {
                         },
                     },
                     todos: {
-                        type: 'array',
+                        type: "array",
                         description: "todos linked to this user",
                         items: {
                             name: {
@@ -173,21 +173,46 @@ module.exports = {
                             id: {
                                 type: "number",
                                 description: "id of the to do",
-                                example: "07c8e0c9-529f-45d2-94c8-583a0973f94b"
-                            }
-                        }
-                    }
+                                example: "07c8e0c9-529f-45d2-94c8-583a0973f94b",
+                            },
+                        },
+                    },
                 },
             },
 
-            // User input model
-            UserInput: {
+            NewUserInput: {
                 type: "object",
                 properties: {
-                    name: {
+                    firstName: {
                         type: "string",
                         description: "User's name",
-                        example: "Jane Doe",
+                        example: "Jane",
+                    },
+                    lastName: {
+                        type: "string",
+                        description: "User's name",
+                        example: "Doe",
+                    },
+                    email: {
+                        type: "string",
+                        description: "The e-mail address of the user",
+                        example: "jane@email.com",
+                    },
+                },
+            },
+
+            UpdateUserInput: {
+                type: "object",
+                properties: {
+                    firstName: {
+                        type: "string",
+                        description: "User's name",
+                        example: "Jane",
+                    },
+                    lastName: {
+                        type: "string",
+                        description: "User's name",
+                        example: "Doe",
                     },
                     email: {
                         type: "string",
@@ -213,7 +238,7 @@ module.exports = {
                         },
                     },
                     todos: {
-                        type: 'array',
+                        type: "array",
                         description: "todos linked to this user",
                         items: {
                             name: {
@@ -234,10 +259,10 @@ module.exports = {
                             id: {
                                 type: "number",
                                 description: "id of the to do",
-                                example: "07c8e0c9-529f-45d2-94c8-583a0973f94b"
-                            }
-                        }
-                    }
+                                example: "07c8e0c9-529f-45d2-94c8-583a0973f94b",
+                            },
+                        },
+                    },
                 },
             },
 
